@@ -13,13 +13,15 @@ To be able to use the application, users can:
   - Install the package 
   `npm install reactmonitor`
   - Require/Import the package
-  `import reactMonitor from 'reactmonitor'` or `const reactMonitor = require('reactmonitor')`
+  `import reactMonitor from 'reactmonitor'`
+  or
+  `const reactMonitor = require('reactmonitor')`
   - Invoke React Monitor with an input of the DOM element that you are rendering the React Element into
-  ```
-  const container = document.querySelector('#root');
-  `reactDOM.render(<App />, container);`
-  reactMonitor(container);
-  ```
+    ```
+    const container = document.querySelector('#root');
+    `reactDOM.render(<App />, container);`
+    reactMonitor(container);
+    ```
 - Navigate to the domain of your React application that you will be running React Monitor on
 - Open your Chrome Developer Tools and select React Monitor
   > Placeholder for Screenshot/Gif
