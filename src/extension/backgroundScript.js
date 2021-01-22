@@ -27,6 +27,7 @@ chrome.runtime.onMessage.addListener((msg) => {
   }
 });
 
+// add reactmonitor to right click menu
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: 'reactmonitor',
@@ -34,8 +35,6 @@ chrome.runtime.onInstalled.addListener(() => {
     contexts: ['page', 'selection', 'image', 'link'],
   });
 })
-
-
 
 chrome.contextMenus.onClicked.addListener(({ menuItemId }) => {
   const options = {
